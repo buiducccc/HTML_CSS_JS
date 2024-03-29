@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Playpen Sans', cursive, sans-serif;
+}
+body {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(227, 227, 255, 0.812), rgba(250, 197, 240, 0.681));
+    background-size: contain;
+}
+nav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.homepage a {
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(77, 75, 72);
+}
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    position: relative;
+}
+.main-menu li {
+    margin-left: 40px;
+    background: linear-gradient(to right,rgb(227, 227, 255), rgb(250, 197, 240));
+    padding: 10px;
+    border: 1px solid rgba(199, 197, 197, 0.966);
+    border-radius: 25px;
+    position: relative;
+}
+.main-menu li a {
+    color: rgb(77, 75, 72);
+    text-decoration: none;
+}
+
+.sub-menu {
+    /* background-color: red; */
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    top: 45px;
+    display: none;
+}
+.sub-menu li {
+    margin: 0;
+    width: 200px;
+}
+.main-menu #li1:hover .sub-menu {
+    display: block;
+}
+.main-menu #li2:hover .sub-menu1 {
+    display: block;
+
+}
+.header1 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* thay đổi kích thước vừa với form*/
+}
+.gt{
+    font-size: 35px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    margin-top: 20px;
+    top: 200px;
+    text-align: center;
+    color:rgb(127, 217, 255);
+    text-transform: uppercase;
+}
+hr{
+    width: 555px;
+    margin: 1px auto;
+}
+#btngt{
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgba(199, 197, 197, 0.966);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: inherit;
+    color:black;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background: linear-gradient(to right,rgb(250, 197, 240),rgb(227, 227, 255));
+}
+.mobai{
+    display: flex;
+    justify-content: space-between;
+}
+.mobai img{
+    width: 100%;
+    height: 250px;
+    margin-left: 25px;
+    object-fit: cover; /* thay đổi kích thước vừa với form*/
+}
+.mobai .right{
+    font-size: 18px;
+    text-align: justify;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+.mobai h2{
+    color: rgb(131, 255, 127);   
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+.mobai a{
+    
+    text-decoration: none;
+}
+.mobai i{
+    color: rgb(180, 235, 196);
+    font-size: 25px;
+    float: left;
+    margin-top: 8px;
+}
+.gt-all h3{
+    font-size: 24px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    text-align: center;
+}
+.lienhe{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.lienhe #btnLienHe{
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    border: 1px solid rgba(199, 197, 197, 0.966);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: inherit;
+    color:black;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background: linear-gradient(to right,rgb(250, 197, 240),rgb(227, 227, 255));
+}
+.lienhe h2{
+    text-align: center;
+    text-transform: uppercase;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+
+footer{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(255, 253, 253, 0.722);
+}
+.footer{
+    position: relative;
+    width: auto;
+    height: 90px;
+    border-bottom: 1px solid rgb(235, 228, 228);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer1{
+    margin: 14px;
+    width: 280px;
+    height: 20px;
+}
+.footer i{
+    color: rgb(235, 180, 210);
+    font-size: 25px;
+    float: left;
+    margin-top: 8px;
+}
+footer h4 {
+    text-align: left;
+    color:black;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding-left: 10px;
+    display: inline-block;
+}
+footer span{
+    text-align: center;
+    color:lightslategray;
+    font-size: 14px;
+}
+.copyright-text{
+    font-size: 14px;
+    text-align: center;
+}

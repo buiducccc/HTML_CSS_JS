@@ -1,0 +1,206 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Playpen Sans', cursive, sans-serif;
+}
+body {
+    /* display: grid; */
+    width: 100%;
+    height: 100%;
+    background-image: url('./Anh/bg6.jpg');
+    background-size: cover;  
+}
+.header{
+    background: linear-gradient(to right,rgb(227, 227, 255), rgb(250, 197, 240));
+}
+nav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.homepage a {
+    text-decoration: none;
+    font-size: 40px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: rgb(77, 75, 72);
+}
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    position: relative;
+}
+.main-menu li {
+    margin-left: 40px;
+    background: linear-gradient(to right,rgb(227, 227, 255), rgb(250, 197, 240));
+    padding: 10px;
+    border: 1px solid rgba(199, 197, 197, 0.966);
+    border-radius: 25px;
+    position: relative;
+}
+.main-menu li a {
+    color: rgb(77, 75, 72);
+    text-decoration: none;
+}
+
+.sub-menu {
+    background-color: linear-gradient(to right,rgb(227, 227, 255), rgb(250, 197, 240));
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    top: 45px;
+    display: none;
+    
+}
+.sub-menu li {
+    background-color: linear-gradient(to right,rgb(227, 227, 255), rgb(250, 197, 240));
+    margin: 0;
+    width: 200px;
+    border-radius: 25px;
+    
+}
+.main-menu #li1:hover .sub-menu {
+    display: block;
+}
+.main-menu #li2:hover .sub-menu1 {
+    display: block;
+}
+/*Phần dưới*/ 
+.select-choose {
+    width: 100%;
+    /* margin-left: 10%;
+    margin-top: 50px; */
+    margin: 50px auto;
+    
+}
+.select-choose h2{
+    text-align: center;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    padding: 5px;
+    width: 65%;
+    margin-left: 10%;
+    border: 1px solid #b6b6b6;
+    border-radius: 20px;
+    background-color:rgb(255, 255, 255);
+    padding: 2%;
+}
+.select-option {
+    margin: 1vw;
+    margin-left: 10%;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #b6b6b6;
+    border-radius: 20px;
+    
+}
+.formTextquestion {
+    color: white;
+    margin-top: 50px ;
+    margin-left: 12%;
+    display: none;
+    transition: display .5s ease-in-out;
+    font-size: 20px;
+}
+.textQuestion {
+    margin-top: 20px;
+    color: rgb(246, 246, 157);
+    margin-left: 12%;
+}
+.text {
+    color: black;
+    width: 900px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+.add-question {
+    color: #000;
+    font-size: 18px;
+    width: 900px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 12%;
+    border: 1px solid  rgba(199, 197, 197, 0.966);
+    border-radius: 25px;
+    background: linear-gradient(to right,rgb(250, 197, 240),rgb(227, 227, 255));
+    margin-bottom: 30px;
+
+}
+.formMorequestion {
+    color: rgb(246, 246, 157);
+    margin-top: 50px ;
+    margin-left: 12%;
+    display: none;
+    transition: display .5s ease-in-out;
+    font-size: 20px;
+
+}
+.choose-question {
+    margin-left: 12%;
+    color: rgb(246, 246, 157);
+    margin-top: 20px;
+}
+.textMore {
+    color: black;
+    width: 880px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+}
+.formOnequestion {
+    color: rgb(246, 246, 157);
+    margin-top: 50px ;
+    margin-left: 12%;
+    display: none;
+    transition: display .5s ease-in-out;
+    font-size: 20px;
+}
+#tableContent {
+    width: 1000px;
+    border: 1px solid;
+    border-collapse: collapse;
+    color: black;
+    margin: 200px auto;
+    background-color: white;
+    border-radius: 10px;
+
+}
+th {
+    width: 50px;
+    border: 1px solid;
+    padding: 30px;
+}
+td {
+    padding: 30px;
+    text-align: center;
+    border: 1px solid;
+}
+#edit, #delete, #add {
+    background-color: transparent ;
+    padding: 5px;
+    color: black;
+    border: 1px solid black;
+}
+.btn:hover {
+    background-color: white;
+    padding: 10px;
+    color: black;
+}
+
+
+
+
+

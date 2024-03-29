@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./TrangVaoHoc.css">
+    <title>Trang Hoc</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="homepage">
+            <img  class="logo" src="./Anh/peach.png" alt="Không hiển thị" width="100px">
+            <a href="./index.html">STWMIRROR</a>
+            </div>
+            <ul class="main-menu">
+                <li><a href="./trangchu.html">Trang chủ</a></li>
+                <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                <li id="li2">
+                    <a href="./contact.html">Liên hệ</a>
+                    <ul class="sub-menu sub-menu1">
+                        <li>
+                            <a href="./contact.html">Đóng góp</a>
+                        </li>
+                        <li> 
+                            <a href="./profile.html">Về chúng tôi</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./index.html">Đăng xuất</a></li>
+                <li id="li1">
+                    <a href="">Tài khoản</a>
+                    <!-- <ul class="sub-menu">
+                        <li >
+                            <a href="./ProfileUser.html" >Thông tin tài khoản</a>
+                        </li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="select-choose">
+        <h2>HÃY LỰC CHỌN LOẠI CÂU HỎI MÀ BẠN MONG MUỐN</h2>
+        <select class="select-option" onchange="change(this)">
+            <option value="">Hãy chọn loại câu hỏi</option>
+            <option value="option1">Chọn nhiều đáp án</option>
+            <option value="option2">Chọn 1 đáp án</option>
+            <option value="option3">Điền đáp án</option>
+        </select>
+    </div>
+    <!-- form câu hỏi điền đáp án -->
+    <div class="formTextquestion">
+       <div class="textQuestion">
+            <p>Nhập câu hỏi:</p>
+            <input type="text" value="" class="text" id="text1" placeholder="Nhập câu hỏi của bạn">
+            <div class="error-message"></div>
+       </div>
+        <div class="textQuestion">
+            <p>Nhập đáp án:</p>
+            <input type="text" value="" class="text" id="text2" placeholder="Nhập đáp án">
+            <div class="error-message"></div>
+        </div>
+        <div class="textQuestion">
+            <!-- hứng giá trị của index khi bấm vào nút sửa -->
+            <input type="hidden" id="index" value=""> 
+        </div>
+        <button class="add-question" id="add" onclick="validateFormTextQuestion()">Thêm câu hỏi</button>
+        <button class="add-question" id="save" onclick="changeQuestion()" style="display: none; color: black;">Cập nhật câu hỏi</button>
+    </div>
+
+
+    <!-- form câu hỏi chọn nhiều đáp án -->
+    <div class="formMorequestion">
+        <div class="textQuestion">
+            <p>Nhập câu hỏi:</p>
+            <input type="text" value="" class="text" id="text3" placeholder="Nhập câu hỏi của bạn">
+            <div class="error-message"></div>
+        </div>
+        <!-- chọn đáp án, điền đáp án -->
+        <div class="choose-question"> 
+            <p>Đáp án A</p>
+            <input type="checkbox" name="choose" id="choose1" value="A" >
+            <!-- textMore là class  -->
+            <input type="text" name="" value="" class="textMore" id="qA" placeholder="Nhập đáp án của bạn"> 
+            <div class="error-message"></div>
+        </div>
+        <div class="choose-question"> 
+            <p>Đáp án B</p>
+            <input type="checkbox" name="choose" id="choose2" value="B" >
+            <!-- textMore là class  -->
+            <input type="text" name="" value="" class="textMore" id="qB" placeholder="Nhập đáp án của bạn"> 
+            <div class="error-message"></div>
+        </div>
+        <div class="choose-question"> 
+            <p>Đáp án C</p>
+            <input type="checkbox" name="choose" id="choose3" value="C" >
+            <!-- textMore là class  -->
+            <input type="text" name="" value="" class="textMore" id="qC" placeholder="Nhập đáp án của bạn"> 
+            <div class="error-message"></div>
+        </div>
+        <div class="choose-question"> 
+            <p>Đáp án D</p>
+            <input type="checkbox" name="choose" id="choose4" value="D" >
+            <!-- textMore là class  -->
+            <input type="text" name="" value="" class="textMore" id="qD" placeholder="Nhập đáp án của bạn"> 
+            <div class="error-message"></div>
+        </div>
+        <button class="add-question" onclick="validateFormMoreQuestion()">Thêm câu hỏi</button>
+    </div>
+
+    <!-- form chọn 1 đáp án -->
+    <div class="formOnequestion">
+        <div class="textQuestion">
+            <p>Nhập câu hỏi:</p>
+            <input type="text" value="" class="text" id="text4" placeholder="Nhập câu hỏi của bạn">
+            <div class="error-message"></div>
+        </div>
+        <!-- chọn đáp án, điền đáp án -->
+        <div class="choose-question"> 
+            <p>Đáp án A</p>
+            <input type="radio" name="radio" id="radio1" value="A" >
+            <!-- textMore là class  -->
+            <input type="text" name="" class="textMore" id="rA" placeholder="Nhập đáp án của bạn"> 
+        </div>
+        <div class="choose-question"> 
+            <p>Đáp án B</p>
+            <input type="radio" name="radio" id="radio2" value="B" >
+            <!-- textMore là class  -->
+            <input type="text" name="" class="textMore" id="rB" placeholder="Nhập đáp án của bạn"> 
+        </div>
+        <div class="choose-question"> 
+            <p>Đáp án C</p>
+            <input type="radio" name="radio" id="radio3" value="C" >
+            <!-- textMore là class  -->
+            <input type="text" name="" class="textMore" id="rC" placeholder="Nhập đáp án của bạn"> 
+        </div>
+        <div class="choose-question"> 
+            <p>Đáp án D</p>
+            <input type="radio" name="radio" id="radio4" value="D" >
+            <!-- textMore là class  -->
+            <input type="text" name="" class="textMore" id="rD" placeholder="Nhập đáp án của bạn"> 
+        </div>
+        <button class="add-question" onclick="validateFormOneQuestion()">Thêm câu hỏi</button>
+    </div>
+    <table id="tableContent">
+
+    </table>
+    <script src="./TrangVaoHoc.js"></script>
+    <!-- <script src="./ProfileUser.js"></script> -->
+</body>
+</html>

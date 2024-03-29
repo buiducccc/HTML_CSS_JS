@@ -1,0 +1,119 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Playpen Sans', cursive, sans-serif;
+}
+body {
+    /* display: grid; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgb(227, 227, 255), rgb(250, 197, 240));
+    background-size: contain;
+}
+.header{
+    background: linear-gradient(to right,rgb(227, 227, 255), rgb(250, 197, 240));
+}
+nav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.homepage a {
+    text-decoration: none;
+    font-size: 40px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: rgb(77, 75, 72);
+}
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    position: relative;
+}
+.main-menu li {
+    margin-left: 40px;
+    background: linear-gradient(to right,rgb(227, 227, 255), rgb(250, 197, 240));
+    padding: 10px;
+    border: 1px solid rgba(199, 197, 197, 0.966);
+    border-radius: 25px;
+    position: relative;
+}
+.main-menu li a {
+    color: rgb(77, 75, 72);
+    text-decoration: none;
+}
+
+.sub-menu {
+    /* background-color: red; */
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    top: 45px;
+    display: none;
+}
+.sub-menu li {
+    margin: 0;
+    width: 200px;
+}
+.main-menu #li1:hover .sub-menu {
+    display: block;
+}
+.main-menu #li2:hover .sub-menu1 {
+    display: block;
+}
+.content {
+    /* width: 1400px; */
+    margin: 100px 10%;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* position: relative; */
+    /* float: left; */
+    font-size: 18px;
+    /* border: 1px solid black; */
+    
+}
+.box {
+    width: 720px;
+    min-height: 300px;
+    margin: 10px ;
+    padding: 30px ;
+    background-color: white;
+    line-height:  3em;
+    border-radius: 15px;
+    float: left;
+}
+.box .input-text {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(173, 166, 166, 0.144);
+}
+.btnSubmit {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 700px;
+    font-size: 20px;
+    background-image: url('./Anh/trangchu2.jpg');
+    
+}
+.btnSubmit:hover {
+    padding: 10px;
+    border: 0.5px solid rgb(165, 161, 161);
+}
